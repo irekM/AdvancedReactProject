@@ -19,12 +19,12 @@ useEffect(()=> {
 
 
 return (
-  <StoreContext.Provider value={
+  <StoreContext.Provider value={{
     courses,
     setCourses,
     user,
     setUser
-  }>
+  }}>
     {children}
   </StoreContext.Provider>
 );
