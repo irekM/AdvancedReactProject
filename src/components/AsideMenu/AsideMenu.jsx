@@ -19,7 +19,10 @@ const adminMenuComponent = user?.accesLevel === ADMIN_TYPE ? <AdminMenu/> : null
 
   return (
     <section className ={style()}>
-      <UserMenu isUserLogged={Boolean(user)} />
+      <div className={style('nav-wrapper')}>
+        <UserMenu isUserLogged={Boolean(user)} />
+        {adminMenuComponent}
+      </div>
     </section>
   );
 };
