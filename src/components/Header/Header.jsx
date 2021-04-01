@@ -12,7 +12,7 @@ const Header = () =>{
   const [isModalOpen, setIsModalOpen] = useState(false);
   const {user, setUser} = useContext{StoreContext};
 
-  const = handleOnClose = () => setIsModalOpen(false);
+  const handleOnClose = () => setIsModalOpen(false);
 
   const handleOnClick = () =>{
     if(Boolean(user)){
